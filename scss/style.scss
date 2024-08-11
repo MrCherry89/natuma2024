@@ -145,9 +145,6 @@
           width: 38px;
           height: 38px;
           @include flex;
-          &:hover {
-            opacity: 0.5;
-          }
           &:before {
             content: none;
           }
@@ -263,9 +260,6 @@
         @include flex;
         position: static;
         transform: translate(0, 0);
-        &:hover {
-          opacity: 0.5;
-        }
         &:before {
           content: none;
         }
@@ -551,11 +545,11 @@ header {
         @include flex;
         position: static;
         transform: translate(0, 0);
-        &:hover {
-          opacity: 0.5;
-        }
         &:before {
           content: none;
+        }
+        &.slick-disabled {
+          opacity: 0.5;
         }
         &.slick-prev {
           left: 0;
@@ -913,7 +907,7 @@ header {
   }
   > button {
     @include flex;
-    &:hover {
+    &.active {
       opacity: 0.5;
     }
     &.left {

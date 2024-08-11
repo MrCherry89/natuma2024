@@ -544,9 +544,6 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
 }
-.buy .wrapper .buy-slider-wrap .slider-navigation button:hover {
-  opacity: 0.5;
-}
 .buy .wrapper .buy-slider-wrap .slider-navigation button:before {
   content: none;
 }
@@ -687,9 +684,6 @@ a:focus {
   display: flex;
   position: static;
   transform: translate(0, 0);
-}
-.info-wrap .info-slider-wrap .slider-navigation button:hover {
-  opacity: 0.5;
 }
 .info-wrap .info-slider-wrap .slider-navigation button:before {
   content: none;
@@ -1050,11 +1044,11 @@ header.shadow .header-info {
   position: static;
   transform: translate(0, 0);
 }
-.blog-slider-wrap .wrapper .slider-navigation button:hover {
-  opacity: 0.5;
-}
 .blog-slider-wrap .wrapper .slider-navigation button:before {
   content: none;
+}
+.blog-slider-wrap .wrapper .slider-navigation button.slick-disabled {
+  opacity: 0.5;
 }
 .blog-slider-wrap .wrapper .slider-navigation button.slick-prev {
   left: 0;
@@ -1511,7 +1505,7 @@ header.shadow .header-info {
   display: -ms-flexbox;
   display: flex;
 }
-.pagination > button:hover {
+.pagination > button.active {
   opacity: 0.5;
 }
 .pagination > button.left img {

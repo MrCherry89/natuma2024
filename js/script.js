@@ -68,6 +68,7 @@ $(document).ready(function () {
     slidesToShow: 1,
     slidesToScroll: 1,
     fade: true,
+    infinite: false,
     prevArrow: $(".blog-slider-wrap .slider-navigation .slick-prev"),
     nextArrow: $(".blog-slider-wrap .slider-navigation .slick-next"),
   });
