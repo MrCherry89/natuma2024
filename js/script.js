@@ -49,10 +49,18 @@ $(document).ready(function () {
     slidesToShow: 1,
     slidesToScroll: 1,
     dots: false,
-    arrows: true,
+    arrows: false,
+    infinite: true,
+    autoplay: true,
     variableWidth: true,
-    prevArrow: $(".info-slider-wrap .slider-navigation .slick-prev"),
-    nextArrow: $(".info-slider-wrap .slider-navigation .slick-next"),
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          variableWidth: false,
+        },
+      },
+    ],
   });
 
   $(".drop-menu").click(function (e) {
