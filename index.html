@@ -22,11 +22,11 @@
           </a>
           <div class="menu-wrap">
             <ul class="main-menu">
-              <li><a href="#">Продукты Эмолибейз</a></li>
-              <li><a href="#">Как действует</a></li>
-              <li><a href="#">Когда применять</a></li>
-              <li><a href="#">Отзывы</a></li>
-              <li><a href="#">Полезно знать</a></li>
+              <li><a href="#emolybase">Продукты Эмолибейз</a></li>
+              <li><a href="#how-works">Как действует</a></li>
+              <li><a href="#info-wrap">Когда применять</a></li>
+              <li><a href="#reviews">Отзывы</a></li>
+              <li><a href="info1.html">Полезно знать</a></li>
               <li><a href="#">Про NATUMA®</a></li>
             </ul>
             <a href="#" class="pink-btn">Где купить</a>
@@ -168,7 +168,7 @@
       </div>
     </div>
 
-    <div class="emolybase">
+    <div class="emolybase" id="emolybase">
       <div class="wrapper">
         <h2 class="main-title">Продукты Эмолибейз</h2>
         <div class="emolybase-items">
@@ -186,7 +186,7 @@
                 Облегченный вариант крема, имеет более лёгкую текстуру. Подходит
                 для нанесения на обширные участки кожи
               </p>
-              <a href="#" class="pink-btn">Подробнее</a>
+              <a href="#popup" class="pink-btn popup">Подробнее</a>
               <a href="#" class="white-btn">Очищение</a>
               <a href="#" class="white-btn">Устранение зуда</a>
               <a href="#" class="white-btn">Увлажнение и смягчение</a>
@@ -206,7 +206,7 @@
                 Базовый качественный уход за Вашей кожей. Трехступенчатое
                 увлажнение кожи...
               </p>
-              <a href="#" class="pink-btn">Подробнее</a>
+              <a href="#popup" class="pink-btn popup">Подробнее</a>
               <a href="#" class="white-btn">Очищение</a>
               <a href="#" class="white-btn">Устранение зуда</a>
               <a href="#" class="white-btn">Увлажнение и смягчение</a>
@@ -226,7 +226,7 @@
                 Базовый качественный уход за Вашей кожей. Трехступенчатое
                 увлажнение кожи...
               </p>
-              <a href="#" class="pink-btn">Подробнее</a>
+              <a href="#popup" class="pink-btn popup">Подробнее</a>
               <a href="#" class="white-btn">Очищение</a>
               <a href="#" class="white-btn">Устранение зуда</a>
               <a href="#" class="white-btn">Увлажнение и смягчение</a>
@@ -246,7 +246,7 @@
                 Базовый качественный уход за Вашей кожей. Трехступенчатое
                 увлажнение кожи...
               </p>
-              <a href="#" class="pink-btn">Подробнее</a>
+              <a href="#popup" class="pink-btn popup">Подробнее</a>
               <a href="#" class="white-btn">Очищение</a>
               <a href="#" class="white-btn">Устранение зуда</a>
               <a href="#" class="white-btn">Увлажнение и смягчение</a>
@@ -256,7 +256,7 @@
       </div>
     </div>
 
-    <div class="how-works">
+    <div class="how-works" id="how-works">
       <div class="wrapper">
         <h2 class="main-title">Как действует Эмолибейз</h2>
         <div class="how-works-info">
@@ -358,7 +358,7 @@
                   проникать инфекции
                 </p>
               </div>
-              <div class="how-item">
+              <div class="how-item zoom">
                 <span class="number">4</span>
                 <div
                   class="animate"
@@ -372,7 +372,7 @@
       </div>
     </div>
 
-    <div class="info-wrap">
+    <div class="info-wrap" id="info-wrap">
       <div class="wrapper">
         <h2 class="main-title">Когда применять Эмолибейз?</h2>
       </div>
@@ -442,7 +442,7 @@
       </div>
     </div>
 
-    <div class="reviews">
+    <div class="reviews" id="reviews">
       <div class="wrapper">
         <h2 class="main-title">Отзывы</h2>
       </div>
@@ -451,6 +451,10 @@
     <div class="buy">
       <div class="wrapper">
         <h2 class="main-title">Где купить?</h2>
+        <div class="buttons">
+          <button type="button" class="active">Россия</button>
+          <button type="button">Казахстан</button>
+        </div>
         <div class="buy-slider-wrap">
           <div class="slider-navigation">
             <button type="button" class="slick-prev">
@@ -586,7 +590,25 @@
     <script src="js/jquery.inputmask.bundle.min.js"></script>
     <script src="js/jquery.validate.js"></script>
     <script src="js/select2.min.js"></script>
+    <script src="js/jquery.smooth-scroll.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/script.js"></script>
+
+    <div id="popup" class="mfp-hide white-popup mfp-with-anim">
+      <div class="popup-body">
+        <button title="Close (Esc)" type="button" class="mfp-close"></button>
+        <div class="info">
+          <h2>Название крема</h2>
+          <p>
+            С нами наши клиенты уверены в своем выборе, ведь мы постоянно
+            контролируем ход строительства объектов наших Партнеров и
+            актуализируем информацию на наших онлайн-каналах. Профессиональный
+            подход и лучшие условия обеспечивают высокий уровень сервиса для
+            наших клиентов. Более 30 000 клиентов доверяют нам и мы рады быть
+          </p>
+          <button type="button" class="pink-btn">Продолжить</button>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
