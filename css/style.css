@@ -443,6 +443,13 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
 }
+.footer .wrapper .footer-top .footer-info .social-menu li a svg {
+  fill: #cecece;
+  transition: 0.3s;
+}
+.footer .wrapper .footer-top .footer-info .social-menu li a:hover svg {
+  fill: #ed2891;
+}
 .footer .wrapper .footer-top .footer-info h4 {
   margin: 20px 0;
   color: white;
@@ -1149,7 +1156,7 @@ header.shadow .header-info {
   background: #fff5fe;
 }
 .header-banner .wrapper {
-  padding: 190px 20px;
+  padding: 200px 20px;
   position: relative;
   z-index: 0;
 }
@@ -1177,6 +1184,11 @@ header.shadow .header-info {
     width: 45vw;
   }
 }
+@media (max-width: 767px) {
+  .header-banner .img-wrap {
+    width: 35vw;
+  }
+}
 .header-banner .img-wrap:after {
   content: "";
   background: linear-gradient(185deg, rgba(255, 245, 254, 0) 3.39%, #fff5fe 95.69%);
@@ -1196,6 +1208,14 @@ header.shadow .header-info {
 @media (max-width: 767px) {
   .header-banner .text-wrap {
     max-width: 450px;
+  }
+}
+.header-banner .text-wrap .info-items {
+  margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+  .header-banner .text-wrap .info-items {
+    max-width: 240px;
   }
 }
 .header-banner .text-wrap .info-items .info-item {
@@ -1243,11 +1263,25 @@ header.shadow .header-info {
     font-size: 28px;
   }
 }
+.header-banner .text-wrap h1 br {
+  display: none;
+}
+@media (max-width: 767px) {
+  .header-banner .text-wrap h1 br {
+    display: inline-block;
+  }
+}
 .header-banner .text-wrap h1 .pink-text {
   color: #ed2891;
 }
 .header-banner .text-wrap h1 img {
-  margin-bottom: -5px;
+  width: 154px;
+}
+@media (max-width: 767px) {
+  .header-banner .text-wrap h1 img {
+    width: 116px;
+    margin-left: 5px;
+  }
 }
 .header-banner .text-wrap p {
   font-size: 18px;
@@ -1664,7 +1698,7 @@ header.shadow .header-info {
   color: white;
   margin-top: auto;
   font-size: 18px;
-  max-width: 260px;
+  max-width: 270px;
 }
 .choose .wrapper .choose-wrap .video {
   width: calc(40% - 15px);
@@ -1790,6 +1824,10 @@ header.shadow .header-info {
   margin-bottom: 11px;
   font-weight: 300;
 }
+.emolybase .emolybase-items .emolybase-item .text-wrap .pink-btn:hover {
+  color: white;
+  background: #f157a9;
+}
 .emolybase .emolybase-items .emolybase-item .text-wrap .white-btn {
   padding: 5px 10px;
   background: white;
@@ -1799,7 +1837,7 @@ header.shadow .header-info {
   margin-top: 12px;
 }
 .emolybase .emolybase-items .emolybase-item .text-wrap .white-btn:hover {
-  background: #000;
+  background: #b5d8e1;
   color: white;
 }
 .emolybase .emolybase-items .emolybase-item.pink .text-wrap {
@@ -2061,7 +2099,7 @@ header.shadow .header-info {
 .works-items .works-item:nth-child(2) img {
   position: absolute;
   right: 0;
-  top: -46px;
+  top: -50px;
 }
 .works-items .works-item:nth-child(3) {
   top: 70px;

@@ -56,6 +56,17 @@
           li {
             margin-right: 12px;
             @include flex;
+            a {
+              svg {
+                fill: #cecece;
+                transition: 0.3s;
+              }
+              &:hover {
+                svg {
+                  fill: #ed2891;
+                }
+              }
+            }
           }
         }
         h4 {
@@ -631,7 +642,7 @@ header {
 .header-banner {
   background: #fff5fe;
   .wrapper {
-    padding: 190px 20px;
+    padding: 200px 20px;
     position: relative;
     z-index: 0;
     @media (max-width: 1024px) {
@@ -650,6 +661,9 @@ header {
     @include flex;
     @media (max-width: 1024px) {
       width: 45vw;
+    }
+    @media (max-width: 767px) {
+      width: 35vw;
     }
     &:after {
       content: "";
@@ -675,6 +689,10 @@ header {
       max-width: 450px;
     }
     .info-items {
+      margin-bottom: 20px;
+      @media (max-width: 767px) {
+        max-width: 240px;
+      }
       .info-item {
         margin-bottom: 10px;
         .hide-text {
@@ -718,11 +736,21 @@ header {
       @media (max-width: 767px) {
         font-size: 28px;
       }
+      br {
+        display: none;
+        @media (max-width: 767px) {
+          display: inline-block;
+        }
+      }
       .pink-text {
         color: #ed2891;
       }
       img {
-        margin-bottom: -5px;
+        width: 154px;
+        @media (max-width: 767px) {
+          width: 116px;
+          margin-left: 5px;
+        }
       }
     }
     p {
@@ -1056,7 +1084,7 @@ header {
             color: white;
             margin-top: auto;
             font-size: 18px;
-            max-width: 260px;
+            max-width: 270px;
           }
         }
       }
@@ -1165,6 +1193,12 @@ header {
           margin-bottom: 11px;
           font-weight: 300;
         }
+        .pink-btn {
+          &:hover {
+            color: white;
+            background: lighten(#ed2891, 10%);
+          }
+        }
         .white-btn {
           padding: 5px 10px;
           background: white;
@@ -1173,7 +1207,7 @@ header {
           border-radius: 40px;
           margin-top: 12px;
           &:hover {
-            background: #000;
+            background: #b5d8e1;
             color: white;
           }
         }
@@ -1401,7 +1435,7 @@ header {
       img {
         position: absolute;
         right: 0;
-        top: -46px;
+        top: -50px;
       }
     }
     &:nth-child(3) {
