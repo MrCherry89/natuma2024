@@ -439,7 +439,7 @@ header {
       @include justify-between;
     }
     @media (max-width: 767px) {
-      padding: 10px 20px;
+      padding: 14px 20px;
     }
     .logo {
       @include flex;
@@ -478,8 +478,8 @@ header {
         opacity: 0;
         transition: 0.3s;
         @media (max-width: 767px) {
-          height: calc(100vh - 44px);
-          top: 44px;
+          height: calc(100vh - 52px);
+          top: 52px;
         }
         &.open {
           visibility: visible;
@@ -688,10 +688,10 @@ header {
     position: relative;
     z-index: 0;
     @media (max-width: 1024px) {
-      padding: 150px 20px;
+      padding: 120px 20px 150px;
     }
     @media (max-width: 767px) {
-      padding: 100px 20px;
+      padding: 80px 20px 100px;
       padding-bottom: 0;
     }
   }
@@ -750,6 +750,9 @@ header {
           color: #404040;
           margin-top: 10px;
           display: none;
+          @media (max-width: 767px) {
+            max-width: 248px;
+          }
           &.show {
             display: block;
           }
@@ -783,7 +786,7 @@ header {
       color: #19183a;
       font-weight: normal;
       @media (max-width: 767px) {
-        font-size: 28px;
+        font-size: 27px;
       }
       br {
         display: none;
@@ -808,6 +811,9 @@ header {
       color: #404040;
       font-weight: 300;
       max-width: 520px;
+      @media (max-width: 767px) {
+        margin: 12px 0;
+      }
     }
   }
 }
