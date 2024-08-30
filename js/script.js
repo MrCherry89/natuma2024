@@ -57,7 +57,8 @@ $(document).ready(function () {
       {
         breakpoint: 768,
         settings: {
-          variableWidth: false,
+          variableWidth: true,
+          centerMode: true,
         },
       },
     ],

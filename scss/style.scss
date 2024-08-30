@@ -277,6 +277,9 @@
     padding-bottom: 60px;
     padding-left: 20px;
     padding-right: 20px;
+    @media (max-width: 767px) {
+      padding: 0;
+    }
     .info-slider {
       .item {
         width: 490px;
@@ -286,7 +289,8 @@
         }
         @media (max-width: 767px) {
           width: auto;
-          margin-left: 20px;
+          width: 290px;
+          margin: 0 10px;
         }
         .img-wrap {
           @include flex;
@@ -434,8 +438,22 @@ header {
       position: relative;
       @include justify-between;
     }
+    @media (max-width: 767px) {
+      padding: 10px 20px;
+    }
     .logo {
       @include flex;
+      width: 170px;
+      @media (max-width: 1200px) {
+        width: 150px;
+      }
+      @media (max-width: 767px) {
+        width: 120px;
+      }
+      img {
+        max-width: 100%;
+        max-height: 100%;
+      }
     }
     .menu-wrap {
       @include flex;
@@ -445,11 +463,11 @@ header {
         margin-left: 0;
         @include dir-col;
         align-items: flex-start;
-        height: calc(100vh - 63px);
+        height: calc(100vh - 58px);
         overflow-y: auto;
         background: white;
         position: absolute;
-        top: 63px;
+        top: 58px;
         left: 0;
         border-top: 1px solid #717073;
         width: 100%;
@@ -459,6 +477,10 @@ header {
         transform: translateY(-100%);
         opacity: 0;
         transition: 0.3s;
+        @media (max-width: 767px) {
+          height: calc(100vh - 44px);
+          top: 44px;
+        }
         &.open {
           visibility: visible;
           transform: translateY(0);
@@ -689,6 +711,8 @@ header {
       margin: 0 auto;
       margin-top: 20px;
       margin-left: 30vw;
+      width: 80vw;
+      margin-left: 20vw;
     }
     &:after {
       content: "";
