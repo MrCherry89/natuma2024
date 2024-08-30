@@ -1718,7 +1718,7 @@ header.shadow .header-info {
 }
 @media (max-width: 1024px) {
   .emolybase {
-    margin-bottom: 50px;
+    padding-bottom: 50px;
   }
 }
 .emolybase .emolybase-items {
@@ -1964,6 +1964,11 @@ header.shadow .header-info {
 @media (max-width: 1200px) {
   .how-items .how-item .animate {
     height: 30vw;
+  }
+}
+@media (max-width: 767px) {
+  .how-items .how-item .animate {
+    height: 250px;
   }
 }
 .how-items .how-item p {

@@ -1111,7 +1111,7 @@ header {
 .emolybase {
   padding: 10px 0 110px;
   @media (max-width: 1024px) {
-    margin-bottom: 50px;
+    padding-bottom: 50px;
   }
   .emolybase-items {
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -1317,6 +1317,9 @@ header {
       background-repeat: no-repeat;
       @media (max-width: 1200px) {
         height: 30vw;
+      }
+      @media (max-width: 767px) {
+        height: 250px;
       }
     }
     p {
